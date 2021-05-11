@@ -26,26 +26,22 @@
     margin-bottom: 0.5%;  
     margin-left: 0.5%;
     margin-right: 0.5%;
-    border: 2px solid red;
 }
 .product-description{
     height: 80%;
     font-size: 16px;
-    border: 2px solid red;
     margin-bottom:0;
     padding-bottom: 0;
 }
 .product-name{
     height: 5%;
     font-size: 22px;
-    border: 2px solid red;
     margin-bottom:0;
     padding-bottom: 0;
 }
 .product-price{
     height: 5%;
     font-size: 22px;
-    border: 2px solid red;
     margin-bottom:0;
     padding-bottom: 0;
 }
@@ -81,7 +77,6 @@
 .product-button{
     height: 10%;
     font-size: 22px;
-    border: 2px solid blue;
     margin-bottom:0;
     padding-bottom: 0;
 }
