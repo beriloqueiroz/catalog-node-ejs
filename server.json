@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "title": "Produto x",
+        "message": "Produto x é Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi, sequi nemo, blanditiis veniam omniserror repudiandae, consequuntur harum ut fugit quam adipisci sunt illum vitae? Ipsa soluta autlaboriosam obcaecati.",
+        "precoDe": "R$ 10,00",
+        "precoPor": "R$ 9,00",
+        "whats": "https://wa.me/5585989071945?text=Tenho%20interesse%20no%20produtox%20anunciado",
+        "imagem": "https://picsum.photos/200/300?random=2",
+        "imagemBig": "https://picsum.photos/500/700?random=2"
+    },
+    {
+        "id": 2,
+        "title": "Produto y",
+        "message": "Produto y é Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi, sequi nemo, blanditiis veniam omniserror repudiandae, consequuntur harum ut fugit quam adipisci sunt illum vitae? Ipsa soluta autlaboriosam obcaecati.",
+        "precoDe": "R$ 15,00",
+        "precoPor": "R$ 12,00",
+        "whats": "https://wa.me/5585989071945?text=Tenho%20interesse%20no%20produtoy%20anunciado",
+        "imagem": "https://picsum.photos/200/300?random=1",
+        "imagemBig": "https://picsum.photos/500/700?random=1"
+    },
+    {
+        "id": 3,
+        "title": "Produto z",
+        "message": "Produto z é é Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi, sequi nemo, blanditiis veniam omniserror repudiandae, consequuntur harum ut fugit quam adipisci sunt illum vitae? Ipsa soluta autlaboriosam obcaecati.",
+        "precoDe": "R$ 10,00",
+        "precoPor": "R$ 9,00",
+        "whats": "https://wa.me/5585989071945?text=Tenho%20interesse%20no%20produtoz%20anunciado",
+        "imagem": "https://picsum.photos/200/300?random=3",
+        "imagemBig": "https://picsum.photos/500/700?random=3"
+    },
+    {
+        "id": 4,
+        "title": "Produto w",
+        "message": "Produto w é é Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi, sequi nemo, blanditiis veniam omniserror repudiandae, consequuntur harum ut fugit quam adipisci sunt illum vitae? Ipsa soluta autlaboriosam obcaecati.",
+        "precoDe": "R$ 10,00",
+        "precoPor": "R$ 9,00",
+        "whats": "https://wa.me/5585989071945?text=Tenho%20interesse%20no%20produtow%20anunciado",
+        "imagem": "https://picsum.photos/200/300?random=1",
+        "imagemBig": "https://picsum.photos/500/700?random=6"
+    },
+    {
+        "id": 5,
+        "title": "Produto z",
+        "message": "Produto z é é Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi, sequi nemo, blanditiis veniam omniserror repudiandae, consequuntur harum ut fugit quam adipisci sunt illum vitae? Ipsa soluta autlaboriosam obcaecati.",
+        "precoDe": "R$ 10,00",
+        "precoPor": "R$ 9,00",
+        "whats": "https://wa.me/5585989071945?text=Tenho%20interesse%20no%20produtoz%20anunciado",
+        "imagem": "https://picsum.photos/200/300?random=3",
+        "imagemBig": "https://picsum.photos/500/700?random=2"
+    },
+    {
+        "id": 6,
+        "title": "Produto w",
+        "message": "Produto w é é Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi, sequi nemo, blanditiis veniam omniserror repudiandae, consequuntur harum ut fugit quam adipisci sunt illum vitae? Ipsa soluta autlaboriosam obcaecati.",
+        "precoDe": "R$ 10,00",
+        "precoPor": "R$ 10,00",
+        "whats": "https://wa.me/5585989071945?text=Tenho%20interesse%20no%20produtow%20anunciado",
+        "imagem": "https://picsum.photos/200/300?random=1",
+        "imagemBig": "https://picsum.photos/500/700?random=5"
+    }
+]

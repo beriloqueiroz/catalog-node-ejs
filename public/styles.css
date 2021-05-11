@@ -1,0 +1,132 @@
+*{
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+
+.logo {
+    width: 100px;
+    height: 79px;
+}
+
+.displayProducts{
+    width: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+}
+.macro-product{
+    width: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+}
+.product-part{
+    width: 49%;
+    text-align: center;
+    margin-bottom: 0.5%;  
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+    border: 2px solid red;
+}
+.product-description{
+    height: 80%;
+    font-size: 16px;
+    border: 2px solid red;
+    margin-bottom:0;
+    padding-bottom: 0;
+}
+.product-name{
+    height: 5%;
+    font-size: 22px;
+    border: 2px solid red;
+    margin-bottom:0;
+    padding-bottom: 0;
+}
+.product-price{
+    height: 5%;
+    font-size: 22px;
+    border: 2px solid red;
+    margin-bottom:0;
+    padding-bottom: 0;
+}
+
+.product-imagem-catalog{
+    height: 73%;
+}
+.product-nome-catalog{
+    height: 5%;
+}
+.product-desc-catalog{
+    height: 3%;
+}
+.product-preco-catalog{
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.product-button-catalog{
+    height: 9%;
+}
+.height100{
+    height: 100%;
+}
+
+.precoDe {
+    text-decoration: line-through;
+    font-weight:normal
+}
+
+.product-button{
+    height: 10%;
+    font-size: 22px;
+    border: 2px solid blue;
+    margin-bottom:0;
+    padding-bottom: 0;
+}
+.blocksize25p {
+    display: block;
+    list-style: none;
+    width: 24%;
+    text-align: center;
+    margin-bottom: 0.5%;  
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+}
+
+.comletewidth{
+    width: 100%;
+}
+
+.fontBigSize{
+    font-size: 22px;
+}
+.fontBold{
+    font-weight: bolder
+}
+.fontNormalSize{
+    font-size: 12;
+}
+
+.backgreen {
+background-color: green;
+color: aliceblue;
+}
+
+.backgrey{
+background-color: rgb(185, 184, 184);
+}
+
+.areatext{
+    border: 0;
+}
+
+.produto p {
+    margin:0;
+    padding: 0;
+}
+
+
+
+

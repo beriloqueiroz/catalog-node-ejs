@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('../partials/head');%>
+
+    <body class="container">
+        <%- include('../partials/header',{pagina:'Produto'});%>
+            <main>
+
+                <div class="macro-product">
+                    <div class="product-part">
+                        <img alt="imagem" src=<%=product.imagemBig %>>
+                    </div>
+                    <div class="product-detail product-part">
+                        <p class="fontBigSize fontBold product-name">
+                            <%= product.title %>
+                        </p>
+                        <p class="product-price">
+                            <%= product.preco %>
+                        </p>
+                        <div class="product-description">
+                            <p class="product-detail fontNormalSize areatext">
+                                <%= product.message %>
+                            </p>
+                        </div>
+                        <form class="product-button" method="get" target="_blank" action=<%=product.whats %>>
+                            <button class="comletewidth backgreen height100" type=" submit">
+                                Pedir pelo whatsapp
+                            </button>
+                        </form>
+                    </div>
+
+                </div>
+
+            </main>
+            <%- include('../partials/footer');%>
+    </body>
+
+</html>
