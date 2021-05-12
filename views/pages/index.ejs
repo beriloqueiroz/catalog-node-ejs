@@ -4,39 +4,37 @@
 <%- include('../partials/head');%>
 
     <body class="container">
-        <%- include('../partials/header',{pagina:'Principal'});%>
+        <%- include('../partials/header',{pagina:'Principal', login:login});%>
+
             <main>
-                <div class="jumbotron">
+                <div class="jumbotron textCenter">
                     <h1>ProdutoTop</h1>
                     <p>Quando se faz com paixão, tudo fica mais bonito.</p>
                 </div>
                 <ul class="displayProducts">
                     <% products.forEach(function(product){ %>
-                        <li class="blocksize25p backgrey produto">
-                            <img class="comletewidth product-imagem-catalog" alt="imagem" src=<%=product.imagem %>>
-                            <p class="comletewidth fontBigSize fontBold product-nome-catalog">
-                                <%= product.title %>
-                            </p>
-                            <a href="/product?productid=<%=product.id %>" class="product-desc-catalog">
-                                <p class="comletewidth fontNormalSize areatext">
-                                    <%= product.message.substring(0,15) + "... (Saiba mais)" %>
+                        <li class="blocksize25p backgrey produto"><a href="/product?productid=<%=product.id %>">
+                                <img class="comletewidth product-imagem-catalog" alt="imagem" src=<%=product.imagem %>>
+                                <p class="comletewidth fontBigSize fontBold product-nome-catalog">
+                                    <%= product.title %>
+                                </p>
+
+                                <p class="comletewidth fontBold product-preco-catalog">
+                                    <% if (product.precoDe <=product.precoPor) {%>
+                                        <%=product.precoPor%>
+                                            <%} else {%>
+                                                De: <span class="precoDe">
+                                                    <%=product.precoDe%>
+                                                </span>
+                                                <br>
+                                                Por:
+                                                <%=product.precoPor %>
+                                                    <%}%>
                                 </p>
                             </a>
-                            <p class="comletewidth fontBold product-preco-catalog">
-                                <% if (product.precoDe <=product.precoPor) {%>
-                                    <%=product.precoPor%>
-                                        <%} else {%>
-                                            De: <span class="precoDe">
-                                                <%=product.precoDe%>
-                                            </span>
-                                            <br>
-                                            Por:
-                                            <%=product.precoPor %>
-                                                <%}%>
-                            </p>
                             <form class="product-button-catalog" method="get" target="_blank" action=<%=product.whats %>
                                 >
-                                <button class="comletewidth backgreen fontBigSize" type="submit">
+                                <button class="comletewidth backgreen fontBigSize height100" type="submit">
                                     Pedir pelo whatsapp
                                 </button>
                             </form>
