@@ -1,8 +1,14 @@
 [
-    {
-        "id": "1620827583714",
-        "name": "berilo",
-        "email": "berilo@maquiadoro.com.br",
-        "password": "$2b$10$7kK3N4KUTGjKAXIjl7SOxOCLGNI52ptOV0I7PIlNCewuMNwIZXf6C"
-    }
+  {
+    "id": "1620860555541",
+    "name": "luiz berilo CASEMIRO QUEIROZ",
+    "email": "logistica@maquiadoro.com.br",
+    "password": "$2b$10$Pk3.G/S6nHq5RIRKQ2vIauw4p/Uj04OOZ2fEvxeUeE5xqj3.zxg6m"
+  },
+  {
+    "id": "1620860650403",
+    "name": "LUIZ B C QUEIROZ",
+    "email": "berilo@maquiadoro.com.br",
+    "password": "$2b$10$7xYN.KYjSKLQc.tnzBK57.ErS3VqCUB0BgcRlbtYgCDuddiyrQZBC"
+  }
 ]
