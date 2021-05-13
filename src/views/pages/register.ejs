@@ -5,28 +5,31 @@
     <body class="container">
         <%- include('../partials/header',{pagina:'Produto'});%>
             <main class="login-main">
-                <div class="display-login">
+                <div class="box-login">
                     <% if (message) { %>
                         <%= message %>
                             <% } %>
-                                <form action="/register" method="POST">
-                                    <div class="input-field-login">
+                                <form action="/register" method="POST" class="form-login">
+                                    <div class="div-input">
                                         <label for="name">Name</label>
-                                        <input class="username" type="text" id="name" name="name" required>
+                                        <input class="item-input" type="text" id="name" name="name" required>
                                     </div>
-                                    <div class="input-field-login">
+                                    <div class="div-input">
                                         <label for="email">Email</label>
-                                        <input class="username" type="email" id="email" name="email" required>
+                                        <input class="item-input" type="email" id="email" name="email" required>
                                     </div>
-                                    <div class="input-field-login">
+                                    <div class="div-input">
                                         <label for="password">Password</label>
-                                        <input class="password" type="password" id="password" name="password" required>
+                                        <input class="item-input" type="password" id="password" name="password"
+                                            required>
                                     </div>
-                                    <button class="button-login" type="submit">Registrar</button>
+                                    <div class="div-buttom-login">
+                                        <button class="button-login" type="submit">Salvar</button>
+                                    </div>
+                                    <div class="div-register-login">
+                                        <a class="link-register-login" href="/login">Login</a>
+                                    </div>
                                 </form>
-                                <div>
-                                    <a href="/login">Login</a>
-                                </div>
                 </div>
             </main>
     </body>

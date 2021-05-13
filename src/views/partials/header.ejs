@@ -1,29 +1,42 @@
-<header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="/">
-            <img src="/logo.jpg" class="logo" alt="logo">
-        </a>
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item"><a class="nav-link" href="/">Catálogo</a></li>
-            <li class="nav-item"><a class="nav-link" href="/sobre">Sobre</a></li>
-        </ul>
-        <ul class="navbar-nav">
+<header class="header-container">
+    <nav class="header-nav-container">
+        <div class="div-header-logo">
+            <a class="header-logo" href="/">
+                <img src="https://picsum.photos/70/70?random=20" class="logo" alt="logo">
+            </a>
+        </div>
+
+        <ul class="header-pages">
+            <li class="header-li-item">
+                <a class="font-sans-medium" href="/">Catálogo</a>
+            </li>
+            <li class="header-li-item">
+                <a class="font-sans-medium" href="/sobre">Sobre</a>
+            </li>
+
             <% if(username) { %>
-                <li class="nav-item nav-left-login">
-                    <p class="nav-link">
+                <li class="header-li-item-right">
+                    <p class="font-sans-medium">
                         Página: <%= typeof pagina !='undefined' ? pagina:'Outro' %>
                     </p>
                 </li>
-                <li class="nav-item nav-left-login">
-                    <p class="nav-link" href="">
+                <li class="header-li-item-right">
+                    <p class="font-sans-medium" href="">
                         Usuário: <%=username%>
                     </p>
                 </li>
-                <li class="nav-item"><a class="nav-link" href="/insertProduct">Inserir Produto</a></li>
-                <li class="nav-item nav-left-login"><a class="nav-link" href="/logout">Sair</a></li>
+                <li class="header-li-item-right">
+                    <a class="font-sans-medium" href="/insertProduct">Inserir Produto</a>
+                </li>
+                <li class="header-li-item-right">
+                    <a class="font-sans-medium" href="/logout">Sair</a>
+                </li>
                 <% } else { %>
-                    <li class="nav-item nav-left-login"><a class="nav-link" href="/login">Entrar</a></li>
+                    <li class="header-li-item-right">
+                        <a class="font-sans-medium" href="/login">Entrar</a>
+                    </li>
                     <% } %>
         </ul>
+
     </nav>
 </header>

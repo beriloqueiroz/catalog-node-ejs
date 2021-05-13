@@ -5,43 +5,52 @@
 
     <body class="container">
         <%- include('../partials/header',{pagina:'Principal'});%>
-
             <main>
-                <div class="jumbotron textCenter">
+                <div class="banner-index">
                     <h1>ProdutoTop</h1>
                     <p>Quando se faz com paixão, tudo fica mais bonito.</p>
                 </div>
-                <ul class="displayProducts">
-                    <% products.forEach(function(product){ %>
-                        <li class="blocksize25p backgrey produto"><a href="/product?productid=<%=product.id %>">
-                                <img class="comletewidth product-imagem-catalog" alt="imagem" src=<%=product.imagem %>>
-                                <p class="comletewidth fontBigSize fontBold product-nome-catalog">
-                                    <%= product.title %>
-                                </p>
+                <div class="box-products">
+                    <ul class="list-products">
+                        <% products.forEach(function(product){ %>
+                            <li class="card-product">
+                                <div class="linked-area-product-catalog">
+                                    <a href="/product?productid=<%=product.id %>" class="font-sans-big">
+                                        <div class="div-product-imagem-catalog">
 
-                                <p class="comletewidth fontBold product-preco-catalog">
-                                    <% if (product.precoDe <=product.precoPor) {%>
-                                        <%=product.precoPor%>
-                                            <%} else {%>
-                                                De: <span class="precoDe">
-                                                    <%=product.precoDe%>
-                                                </span>
-                                                <br>
-                                                Por:
-                                                <%=product.precoPor %>
-                                                    <%}%>
-                                </p>
-                            </a>
-                            <form class="product-button-catalog" method="get" target="_blank" action=<%=product.whats %>
-                                >
-                                <button class="comletewidth backgreen fontBigSize height100" type="submit">
-                                    Pedir pelo whatsapp
-                                </button>
-                            </form>
-                        </li>
-                        <% }) %>
-                </ul>
+                                            <img class="product-imagem-catalog" alt="imagem" src=<%=product.imagem %>>
 
+                                        </div>
+                                        <div class=info-product-catalog>
+                                            <div class="product-nome-catalog">
+                                                <%= product.title %>
+                                            </div>
+
+                                            <div class="product-preco-catalog preco-catalog">
+                                                <% if (product.precoDe <=product.precoPor) {%>
+                                                    <%=product.precoPor%>
+                                                        <%} else {%>
+                                                            De: <span class="precoDe">
+                                                                <%=product.precoDe%>
+                                                            </span>
+                                                            &nbspPor:
+                                                            <%=product.precoPor %>
+                                                                <%}%>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <form class="form-product-button-catalog" method="get" target="_blank"
+                                    action=<%=product.whats %>
+                                    >
+                                    <button class="product-button-catalog font-sans-big" type="submit">
+                                        Pedir pelo whatsapp
+                                    </button>
+                                </form>
+                            </li>
+                            <% }) %>
+                    </ul>
+                </div>
             </main>
             <%- include('../partials/footer');%>
     </body>

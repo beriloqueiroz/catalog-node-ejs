@@ -1,0 +1,116 @@
+/* login/register  ->*/
+.login-main{
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.box-login{
+    display: flex;
+    flex-direction: column;
+    padding: 0.5%;
+    box-sizing: border-box;    
+    width: 500px;
+    height: 300px;
+    border: 2px solid #C0CBA5;
+    box-shadow: 2px 4px #C0CBA5;
+    background-color: #FFFFFF;
+    border-radius: 7px;
+}
+
+.form-login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 90%;
+    box-sizing: border-box;
+    padding: 1%;
+    margin: 0;
+}
+
+.div-input {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    box-sizing: border-box;
+    padding: 1% 1% 1% 1%;
+    margin: 0;
+    width: 100%;
+    height: 30%;
+}
+
+.label-input{
+    width: 100%;
+    height: 30%;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-size: large;
+    margin-bottom: 1%;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.item-input {
+    width: 100%;
+    height: 70%;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.div-buttom-login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 1% 1% 0% 1%;
+    margin: 0;
+    width: 100%;
+    height: 25%;    
+}
+
+.button-login{    
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;   
+    align-items: center;
+    background: #FFCBA5;
+    box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #242020;
+}
+
+.div-register-login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 1% 1% 1% 1%;
+    margin: 1% 0 0 0;
+    width: 100%;
+    height: 15%;  
+}
+
+.link-register-login{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #003B4D;
+}
+
+/* <- login/register */
