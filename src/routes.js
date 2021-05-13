@@ -6,22 +6,33 @@ const ProductController = require('./controllers/ProductController')
 const Product = require('./model/Product')
 const HomeController = require('./controllers/HomeController')
 
+
+function restrict(req, res, next) {
+    if (req.session.user) {
+        next();
+    } else {
+        req.session.error = 'Access denied!';
+        res.redirect('/login');
+    }
+}
+
+
 routes.get("/login", LoginController.init)
 routes.get("/register", RegisterController.init)
 routes.post("/login", LoginController.authenticate)
 routes.get("/", HomeController.index)
 routes.post('/register', RegisterController.insert)
 routes.get("/product", ProductController.init)
-
+routes.get("/insertProduct", restrict, ProductController.insert)
 routes.get("/logout", async (req, res) => {
-    LoginController.setUsername(null);
     const products = await Product.get();
-    res.render("pages/index", { products: products, username: null })
+    req.session.destroy(function () {
+        res.render("pages/index", { products: products, username: null });
+    });
 })
 
-routes.get("/sobre", async (req, res) => {
-    const username = await LoginController.getUsername()
-    res.render("pages/about", { username: username })
+routes.get("/sobre", restrict, async (req, res) => {
+    res.render("pages/about", { username: req.session.user.name })
 })
 
 module.exports = routes;

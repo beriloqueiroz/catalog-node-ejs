@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('../partials/head');%>
+
+    <body class="container">
+        <%- include('../partials/header',{pagina:'Inserir Produto'});%>
+            <main>
+                <div class="macro-product">
+                    <div class="product-part">
+                        <img alt="+" src="" %>>
+                    </div>
+                    <div class="product-detail product-part">
+                        <div class="input-product-title">
+                            <label for="title" class="label-product-title">Título</label>
+                            <input type="text" name="input-product-title" class="input-product-title" required>
+                        </div>
+                        <div class="input-product-price">
+                            <label for="price-1" class="label-product-price-1">Preço De</label>
+                            <input type="number" name="input-product-price-1" class="input-product-price-1" required>
+                            <label for="price-2" class="label-product-price-2">Preço Por</label>
+                            <input type="number" name="input-product-price-2" class="input-product-price-2" required>
+                        </div>
+                        <div class="input-product-description">
+                            <label for="description" class="label-product-description">Descrição</label>
+                            <input type="text" name="input-product-description" class="input-product-description"
+                                required>
+                        </div>
+                        <form class="product-button" method="get" target="_blank">
+                            <button class="comletewidth height100" type=" submit">
+                                Salvar
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </main>
+            <%- include('../partials/footer');%>
+    </body>
+
+</html>

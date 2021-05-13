@@ -1,7 +1,7 @@
 const User = require('../model/User')
 const Product = require('../model/Product')
 const bcrypt = require('bcrypt')
-let username = null;
+
 module.exports = {
     async authenticate(req, res) {
         const users = await User.get();
@@ -10,30 +10,19 @@ module.exports = {
         if (user == null) {
             return res.render("pages/login", { message: 'No user with that email', username: username })
         }
+
         if (await bcrypt.compare(req.body.password, user.password)) {
-            username = user.name;
-            return res.render("pages/index", { products: products, username: username })
+            const username = user?.name;
+            req.session.regenerate(function () {
+                req.session.user = user;
+                console.log(req.session.user);
+                return res.render("pages/index", { products: products, username: username })
+            });
         } else {
-            return res.render("pages/login", { message: 'Password incorrect', username: username })
+            return res.render("pages/login", { message: 'Password incorrect', username: null })
         }
-    },
-    isAuthenticated() {
-        return !!username
-    },
-    isNotAuthenticated() {
-        return !!!username
     },
     init(req, res) {
-        if (!!!username) {
-            return res.render("pages/login", { message: username, username: username })
-        } else {
-            return res.redirect("/")
-        }
-    },
-    getUsername() {
-        return username;
-    },
-    setUsername(name) {
-        username = name;
+        return res.render("pages/login", { message: req.session.user?.name, username: req.session.user?.name })
     }
 }

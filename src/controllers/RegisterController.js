@@ -1,6 +1,5 @@
 const User = require('../model/User')
 const bcrypt = require('bcrypt')
-const LoginController = require('../controllers/LoginController')
 async function userExist(email) {
     const users = await User.get();
     const user = users.find(user => user.email == email)
@@ -26,11 +25,12 @@ module.exports = {
             await insertUser(req)
             return res.redirect('/login')
         } else {
-            return res.render("pages/register", { message: resp.message, username: LoginController.getUsername() })
+            return res.render("pages/register", { message: resp.message, username: req.session.user?.name })
         }
     },
     init(req, res) {
-        if (LoginController.isNotAuthenticated)
-            return res.render("pages/register", { message: LoginController.getUsername(), username: LoginController.getUsername() })
+        if (!req.session.user)
+            return res.render("pages/register", { message: req.session.user?.name, username: req.session.user?.name })
+        else return res.redirect("pages/index")
     }
 }
