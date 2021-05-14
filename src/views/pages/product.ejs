@@ -9,20 +9,28 @@
                     <div class="product-part">
                         <img alt="imagem" src=<%=product.imagemBig %>>
                     </div>
-                    <div class="product-detail product-part">
-                        <p class="fontBigSize fontBold product-name">
+                    <div class="product-detail">
+                        <p class="font-sans-big-bl product-name">
                             <%= product.title %>
                         </p>
-                        <p class="product-price">
-                            <%= product.preco %>
+                        <p class="product-price font-sans-medium-bl">
+                            <% if (product.precoDe <=product.precoPor) {%>
+                                <%=product.precoPor%>
+                                    <%} else {%>
+                                        De: <span class="precoDe">
+                                            <%=product.precoDe%>
+                                        </span>
+                                        &nbspPor:
+                                        <%=product.precoPor %>
+                                            <%}%>
                         </p>
                         <div class="product-description">
-                            <p class="product-detail fontNormalSize areatext">
+                            <p class="font-sans-medium-bl">
                                 <%= product.message %>
                             </p>
                         </div>
-                        <form class="product-button" method="get" target="_blank" action=<%=product.whats %>>
-                            <button class="comletewidth backgreen height100" type=" submit">
+                        <form class="form-product-button" method="get" target="_blank" action=<%=product.whats %>>
+                            <button class="product-button font-sans-medium-bl" type=" submit">
                                 Pedir pelo whatsapp
                             </button>
                         </form>

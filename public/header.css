@@ -1,0 +1,68 @@
+/* header -> */
+
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    background-color: #C0CBA5;
+    box-shadow: 2px 2px 2px #C0CBA5;    
+    margin: 0% 10% 1% 10%;
+    box-sizing: border-box; 
+    width: 100%;   
+}
+.header-nav-container{    
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;  
+}
+
+.header-pages{
+    vertical-align: middle;
+    list-style: none;  
+    height: 85px;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.header-li-item{
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;    
+    float:left;
+    box-sizing: border-box;    
+    margin: 0% 1% 0% 0%;
+    display: flex;  
+    align-items: center;
+}
+
+
+.header-li-item-right{
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;    
+    float: right !important;
+    box-sizing: border-box;
+    margin: 0% 1% 0% 0%;
+    display: flex;
+    align-items: center;
+}
+.div-header-logo{
+    width: auto;
+    height: 85px;
+    box-sizing: border-box;
+    margin: 0.5%;
+    margin-right: 3%;
+}
+
+/* <- header */
